@@ -660,6 +660,11 @@ p {
     width: 40%;
   }
 
+  .sign-up {
+    width: 80%;
+    left: 60px;
+  }
+
   #page-header {
     width: 100%;
   }
@@ -685,7 +690,7 @@ p {
     padding: 40px;
   }
 
-  form {
+  #from-details form {
     width: 50%;
   }
 }
@@ -732,6 +737,11 @@ p {
 
   footer .logo {
     width: 40%;
+  }
+
+  .sign-up {
+    width: 80%;
+    left: 50px;
   }
 
   #contact-details {
