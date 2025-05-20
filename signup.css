@@ -95,6 +95,12 @@ label {
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(111, 176, 233);
 }
 
 .btn {
@@ -102,6 +108,12 @@ a {
   border-radius: 25px;
   font-size: 15px;
   margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: aliceblue;
 }
 
 @media (max-width: 799px) {

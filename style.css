@@ -348,13 +348,242 @@ footer .copyright {
   text-align: center;
 }
 
+.sign-up {
+  border: 4px solid white;
+  border-radius: 15px;
+  text-align: center;
+  width: 50%;
+  padding: 40px;
+  background-color: rgb(82, 82, 146);
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 6px;
+  left: 0px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 50px;
+  color: aliceblue;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+input::placeholder {
+  padding-left: 30px;
+}
+
+#input {
+  position: relative;
+  margin-bottom: 5px;
+  border: none;
+}
+
+#input i {
+  background-color: white;
+  border-radius: 14px;
+  font-size: 20px;
+  padding: 12px;
+  position: absolute;
+  align-items: center;
+  bottom: 2px;
+  right: 0;
+}
+
+#input2 {
+  position: relative;
+  border: none;
+}
+
+#input2 i {
+  background-color: white;
+  border-radius: 14px;
+  font-size: 20px;
+  padding: 12px;
+  position: absolute;
+  align-items: center;
+  bottom: 2px;
+  right: 0;
+}
+
+label {
+  display: flex;
+  align-items: start;
+}
+
+.remember-password {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: rgb(111, 176, 233);
+}
+
+.btn {
+  padding: 10px 40px;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: aliceblue;
+}
+
+#page-header {
+  background-image: url(https://plus.unsplash.com/premium_photo-1682125235036-d1ab54136ff4?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29udGFjdHxlbnwwfHwwfHx8MA%3D%3D);
+  text-align: center;
+  padding-top: 5%;
+  height: 45vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  height: 10vh;
+  color: black;
+  font-size: 38px;
+}
+
+p {
+  height: 5vh;
+  color: black;
+  font-size: 18px;
+}
+
+#close {
+  display: none;
+}
+
+.details h2,
+#form-details h2 {
+  color: #101113;
+  font-size: 26px;
+  line-height: 35px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.details h3 {
+  color: #101113;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.details {
+  width: 40%;
+}
+
+.details span,
+#form-details form span {
+  font-size: 12px;
+}
+.details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+.details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+.details li p {
+  color: #101113;
+  margin: 0;
+  font-size: 14px;
+}
+
+.details .map {
+  width: 55%;
+  height: 300px;
+}
+
+.details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid aliceblue;
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid aliceblue;
+}
+
+#form-details .people div {
+  padding-bottom: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+.people div img {
+  margin-right: 15px;
+}
+.people div span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #101113;
+}
+
 @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
   }
 
   .logo {
-    width: 45%;
+    width: 20%;
   }
   #navbar {
     display: flex;
@@ -429,8 +658,37 @@ footer .copyright {
 
   footer .logo {
     width: 40%;
-}
+  }
 
+  #page-header {
+    width: 100%;
+  }
+
+  #contact-details h2 {
+    font-size: 20px;
+  }
+
+  . {
+    padding-bottom: 10px;
+  }
+
+  #contact-details {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .map iframe {
+    width: 100%;
+  }
+
+  #form-details {
+    padding: 40px;
+  }
+
+  form {
+    width: 50%;
+  }
+}
 @media (max-width: 477px) {
   .section-p1 {
     padding: 20px;
@@ -474,5 +732,28 @@ footer .copyright {
 
   footer .logo {
     width: 40%;
+  }
+
+  #contact-details {
+    flex-direction: column;
+  }
+
+  .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .map {
+    width: 100%;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
