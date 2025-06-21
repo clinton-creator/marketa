@@ -3,373 +3,609 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marketa</title>
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Responsive pizza website - Bedimcode</title>
   </head>
   <body>
-    <section id="header">
-      <a href="#"
-        ><img
-          class="logo"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCiIt4hMpB0pX5-PNxIcZs3ei5RclQo8mWA&s"
-          alt=""
-          width="200"
-      /></a>
-      <div>
-        <ul id="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="sign up.html">Sign up</a></li>
-          <li id="lg-bag">
-            <a href="cart.html"
-              ><i class="fa fa-shopping-cart" aria-hidden="true"></i
-            ></a>
-          </li>
-          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-        </ul>
-      </div>
-      <div class="mobile">
-        <a href="cart.html"
-          ><i
-            class="fa fa-shopping-cart"
-            aria-hidden="true"
-            style="color: #101113"
-          ></i
-        ></a>
-        <i id="bar" class="fa-solid fa-bars fa-flip" style="color: #101113"></i>
-      </div>
-    </section>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="assets/img/logo-pizza.svg" alt="image" />
+          Pizza
+        </a>
 
-    <section id="hero">
-      <h4>Trade Offer</h4>
-      <h2>Super value deals</h2>
-      <h1>On all products</h1>
-      <p>Save more with coupon & up to 70% off!</p>
-      <button>Shop Now</button>
-    </section>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#Home" class="nav__link active-link">Home</a>
+            </li>
 
-    <section id="feature" class="section-p1">
-      <div class="fe-box">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1683984171269-04c84ee23234?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-          width="70"
-        />
-        <h6>Free Shipping</h6>
-      </div>
-      <div class="fe-box">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1681488018678-ee7f222527ba?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
-        <h6>Online</h6>
-      </div>
-      <div class="fe-box">
-        <img
-          src="https://images.unsplash.com/photo-1607863680198-23d4b2565df0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2F2ZSUyMG1vbmV5fGVufDB8fDB8fHww"
-          alt=""
-        />
-        <h6>Save Money</h6>
-      </div>
-      <div class="fe-box">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1664201889896-6a42c19e953a?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
-        <h6>Promotions</h6>
-      </div>
-      <div class="fe-box">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1739315914957-1e2850afb510?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
-        />
-        <h6>Happy Sale</h6>
-      </div>
-      <div class="fe-box">
-        <img
-          src="https://media.istockphoto.com/id/2156429919/photo/man-touch-a-worldwide-nonstop-support-help-full-time-available-contact-of-business-service.webp?a=1&b=1&s=612x612&w=0&k=20&c=TGonMnSwAAowVpxd9DXb6y-Cg4A1RxH9UGMm3h9i4zA="
-          alt=""
-        />
-        <h6>24/7 Support</h6>
-      </div>
-    </section>
+            <li>
+              <a href="#About Us" class="nav__link">About Us</a>
+            </li>
 
-    <section id="product1" class="section-p1">
-      <h2>Feature Product</h2>
-      <p>Track suits Collection New Morden Design</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/0e72704d-be58-471f-9e57-d0bf40585fbf.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Comfortable Men's Casual Patchwork Sport Suit Jacket and Trousers
-              8030
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+            <li>
+              <a href="#Popular" class="nav__link">Popular</a>
+            </li>
+
+            <li>
+              <a href="#Products" class="nav__link">Products</a>
+            </li>
+
+            <li>
+              <a href="#Contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+
+        <!-- toggle button -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-fill"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Crispy And <br />
+              Delicious Pizzas
+            </h1>
+
+            <p class="home__description">
+              Order the best pizzas to end your hunger and make your family
+              moments more memorable, place your order now.
+            </p>
+
+            <a href="#products" class="button">Order Pizza Now</a>
+
+            <img
+              src="assets/img/sticker-pizza.svg"
+              alt="image"
+              class="home__sticker-1"
+            />
+            <img
+              src="assets/img/sticker-leaf.svg"
+              alt="image"
+              class="home__sticker-2"
+            />
+          </div>
+
+          <div class="home__images">
+            <img
+              src="assets/img/home-pizza.png"
+              alt="image"
+              class="home__pizza"
+            />
+            <img
+              src="assets/img/home-board.png"
+              alt="image"
+              class="home__board"
+            />
+
+            <img
+              src="assets/img/home-leaf-1.png"
+              alt="image"
+              class="home__ingredient home__leaf-1"
+            />
+            <img
+              src="assets/img/home-leaf-2.png"
+              alt="image"
+              class="home__ingredient home__leaf-2"
+            />
+            <img
+              src="assets/img/home-pepperoni.png"
+              alt="image"
+              class="home__ingredient home__pepperoni"
+            />
+            <img
+              src="assets/img/home-mushroom.png"
+              alt="image"
+              class="home__ingredient home__mushroom"
+            />
+            <img
+              src="assets/img/home-olive.png"
+              alt="image"
+              class="home__ingredient home__olive"
+            />
+            <img
+              src="assets/img/home-tomato.png"
+              alt="image"
+              class="home__ingredient home__tomato"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              Learn More About <br />
+              Our History
+            </h2>
+
+            <p class="about__description">
+              The secret to success is the best ingredients to make a better
+              pizza. Today we strive for perfection, just as we have been doing
+              for 15 years when we first opened the pizzeria in Lima - Peru.
+            </p>
+
+            <a href="#popular" class="button">The Best Pizzas</a>
+
+            <img
+              src="assets/img/sticker-cheese.svg"
+              alt="image"
+              class="about__sticker"
+            />
+          </div>
+
+          <img src="assets/img/about-img.png" alt="image" class="about__img" />
+        </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+        <div class="popular__container container grid">
+          <div class="popular__data">
+            <h2 class="section__title">
+              Discover <br />
+              Popular Orders
+            </h2>
+
+            <p class="popular__description">
+              Select the best prepared and delicious flavors. We have collected
+              some popular recipes from around the world for you to choose your
+              favorite.
+            </p>
+          </div>
+
+          <div class="popular__swiper swiper">
+            <img
+              src="assets/img/popular-dish.png"
+              alt="image"
+              class="popular__dish"
+            />
+
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular-1.png"
+                  alt="image"
+                  class="popular__img"
+                />
+                <h3 class="popular__title">Margherita Pizza</h3>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular-2.png"
+                  alt="image"
+                  class="popular__img"
+                />
+                <h3 class="popular__title">Mushroom Pizza</h3>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="assets/img/popular-3.png"
+                  alt="image"
+                  class="popular__img"
+                />
+                <h3 class="popular__title">Pepperoni Pizza</h3>
+              </article>
             </div>
-            <h4>$38</h4>
           </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
+      </section>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/f2925df5-1e66-4f7b-92aa-d2e32ac99c87.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Men's Casual Outwear Set, Polyester Fleece Pullover And Pants,
-              Geometric Pattern, Machine Washable, Regular Fit, Knitted
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+      <!--==================== RECIPE ====================-->
+      <section class="recipe section">
+        <h2 class="section__title">
+          Fresh And <br />
+          Natural Ingredients
+        </h2>
+
+        <div class="recipe__container container grid">
+          <div class="recipe__list grid">
+            <img
+              src="assets/img/recipe-flour.png"
+              alt=""
+              class="recipe__image"
+            />
+
+            <div>
+              <h3 class="recipe__name">Flour</h3>
+              <p class="recipe__description">
+                The best wheat from the field for the best flour.
+              </p>
             </div>
-            <h4>$30</h4>
           </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+          <div class="recipe__list grid">
+            <img
+              src="assets/img/recipe-cheese.png"
+              alt=""
+              class="recipe__image"
+            />
+
+            <div>
+              <h3 class="recipe__name">Cheese</h3>
+              <p class="recipe__description">
+                Indulge in cheese for a healthy future.
+              </p>
+            </div>
+          </div>
+
+          <div class="recipe__list grid">
+            <img
+              src="assets/img/recipe-sauces.png"
+              alt=""
+              class="recipe__image"
+            />
+
+            <div>
+              <h3 class="recipe__name">Sauces</h3>
+              <p class="recipe__description">
+                Add a touch of salsa to your life and it will taste better.
+              </p>
+            </div>
+          </div>
+
+          <div class="recipe__list grid">
+            <img
+              src="assets/img/recipe-tomato.png"
+              alt=""
+              class="recipe__image"
+            />
+
+            <div>
+              <h3 class="recipe__name">Vegetables</h3>
+              <p class="recipe__description">
+                Vegetables full of the essence of nature and organic.
+              </p>
+            </div>
+          </div>
+
+          <div class="recipe__list grid">
+            <img
+              src="assets/img/recipe-meat.png"
+              alt=""
+              class="recipe__image"
+            />
+
+            <div>
+              <h3 class="recipe__name">Meats</h3>
+              <p class="recipe__description">
+                The best fresh meats for your health.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img
+              src="assets/img/recipe-img.png"
+              alt="image"
+              class="recipe__img"
+            />
+          </div>
         </div>
+      </section>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/open/4c9be10b3ae54b05b24ad6341e319ada-goods.jpeg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Men's Parisian Print Trendy Tracksuit Set - Slim Fit Stand Collar
-              Zip-Up Jacket & Joggers with Pockets, Casual Sporty Outfit for
-              Fall/Winter, Machine Washable, Li Ling, Two-Piece Set
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4>$50</h4>
-          </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+        <h2 class="section__title">
+          The Most <br />
+          Devoured Pizzas
+        </h2>
+
+        <div class="products__container container grid">
+          <article class="products__card">
+            <img
+              src="assets/img/product-1.png"
+              alt="image"
+              class="products__img"
+            />
+
+            <h3 class="products__name">Vegetarian</h3>
+            <span class="products__price">$15</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img
+              src="assets/img/product-2.png"
+              alt="image"
+              class="products__img"
+            />
+
+            <h3 class="products__name">
+              Pepperoni <br />
+              Pizza
+            </h3>
+            <span class="products__price">$10</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img
+              src="assets/img/product-3.png"
+              alt="image"
+              class="products__img"
+            />
+
+            <h3 class="products__name">
+              Margherita <br />
+              Pizza
+            </h3>
+            <span class="products__price">$12</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img
+              src="assets/img/product-4.png"
+              alt="image"
+              class="products__img"
+            />
+
+            <h3 class="products__name">
+              Mushroom <br />
+              Pizza
+            </h3>
+            <span class="products__price">$17</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img
+              src="assets/img/product-5.png"
+              alt="image"
+              class="products__img"
+            />
+
+            <h3 class="products__name">
+              Italian <br />
+              Pizza
+            </h3>
+            <span class="products__price">$10</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
         </div>
+      </section>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/6b33a8d7-d59e-492b-8ecf-48c55ee096f9.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Men'S 2pcs Athletic Hoodie and Sweatpants Set, Casual Polyester
-              Knit Fabric, Long Sleeve Zip-Up Hooded Top with Pockets,
-              Drawstring Waist Gym Tracksuit, Regular Fit, Fall/Winter Lash Sets
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+            <h2 class="section__title">Contact Now</h2>
+
+            <div class="contact__info grid">
+              <div>
+                <h3 class="contact__title">Write Us</h3>
+                <div class="contact__social">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!"
+                    target="_blank"
+                    class="contact__social-link"
+                  >
+                    <i class="ri-whatsapp-fill"></i>
+                  </a>
+
+                  <a
+                    href="https://m.me/bedimcode"
+                    target="_blank"
+                    class="contact__social-link"
+                  >
+                    <i class="ri-messenger-fill"></i>
+                  </a>
+
+                  <a
+                    href="https://t.me/telegram"
+                    target="_blank"
+                    class="contact__social-link"
+                  >
+                    <i class="ri-telegram-2-fill"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="contact__title">Delivery</h3>
+
+                <address class="contact__address">
+                  +00-987-7654-321 <br />
+                  +11-012345
+                </address>
+              </div>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+
+                <address class="contact__address">
+                  Lima - Sun City - Peru <br />
+                  Av. Moon #4321
+                </address>
+
+                <a
+                  href="https://maps.app.goo.gl/MAmMDxUBFXBSUzLH7"
+                  target="_blank"
+                  class="contact__map"
+                >
+                  <i class="ri-map-pin-fill"></i>
+                  <span>View On Map</span>
+                </a>
+              </div>
             </div>
-            <h4>$56</h4>
           </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <div class="contact__image">
+            <img
+              src="assets/img/contact-img.png"
+              alt="image"
+              class="contact__img"
+            />
+          </div>
+
+          <img
+            src="assets/img/sticker-tomato.svg"
+            alt="image"
+            class="contact__sticker-1"
+          />
+          <img
+            src="assets/img/sticker-mushroom.svg"
+            alt="image"
+            class="contact__sticker-2"
+          />
+          <img
+            src="assets/img/sticker-onion.svg"
+            alt="image"
+            class="contact__sticker-3"
+          />
         </div>
+      </section>
+    </main>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/beaeaf05-da0a-4d33-8adb-4d424120db3c.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Men's Athletic Tracksuit Set - Green & Black Striped Zip-Up Jacket
-              with Stand Collar & Matching Joggers, 100% Polyester, Machine
-              Washable - Sporty Outdoor Racing Suit
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4>$53</h4>
-          </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <a href="#" class="footer__logo">Pizza</a>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/f57653d8-dcc1-4def-b7b1-e9d686994ce2.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Spring and Autumn Men's Sports Casual Long Sleeve Nine-Twenty
-              Pants Suit
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4>$48</h4>
-          </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+        <div class="footer__content grid">
+          <div>
+            <h3 class="footer__title">Social</h3>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/9947e28e-9da3-441e-a072-0d4faf40ea9b.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>
-              Seasonal Style, Men's Casual 2pcs Set: Comfy Polyester Sweatshirt
-              & Joggers with Unique Print Design - Machine Washable, Round Neck,
-              Pockets Included
-            </h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <h4>$28</h4>
-          </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+            <div class="footer__social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-links"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
 
-        <div class="pro">
-          <img
-            src="https://img.kwcdn.com/product/fancy/deb8c3c3-2946-4fff-bc83-00c5c2d290c0.jpg?imageView2/2/w/800/q/70/format/webp"
-            alt=""
-          />
-          <div class="des">
-            <span>Sports</span>
-            <h5>Men'S Casual Work Jacket And Tapered Pants Two-Piece Set</h5>
-            <div class="star">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-links"
+              >
+                <i class="ri-instagram-fill"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-links"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
             </div>
-            <h4>$35</h4>
           </div>
-          <a id="cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+          <div>
+            <h3 class="footer__title">Payment Methods</h3>
+
+            <div class="footer__pay">
+              <img
+                src="assets/img/footer-card-1.png"
+                alt="image"
+                class="footer__pay-1"
+              />
+              <img
+                src="assets/img/footer-card-2.png"
+                alt="image"
+                class="footer__pay-2"
+              />
+              <img
+                src="assets/img/footer-card-3.png"
+                alt="image"
+                class="footer__pay-3"
+              />
+              <img
+                src="assets/img/footer-card-4.png"
+                alt="image"
+                class="footer__pay-4"
+              />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Subscribe For Discounts</h3>
+
+            <form action="" class="footer__form">
+              <input type="email" placeholder="Email" class="footer__input" />
+              <button type="submit" class="footer__button button">
+                Subscribe
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="banner">
-      <h4>Repair Servic</h4>
-      <h2>Up to <span>70% 0ff</span> All Track Suits $ Accessories</h2>
-      <button class="normal">Explore More</button>
-    </section>
-
-    <footer class="section-p1">
-      <div class="col">
-        <img
-          class="logo"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCiIt4hMpB0pX5-PNxIcZs3ei5RclQo8mWA&s"
-          alt=""
-          width="200"
-        />
-        <h4>Contact</h4>
-        <p><strong>Address</strong> lekki phase 1</p>
-        <p><strong>Phone</strong> +234 xxxxxxx</p>
-        <p><strong>Hours</strong>10:00 - 18:00, Mon - Sat</p>
-        <div class="follow">
-          <h4>Follow us</h4>
-          <div class="icon">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-tiktok"></i>
-          </div>
-        </div>
+      <div class="footer__policy">
+        <a href="#" class="footer__link">Terms & Agreements</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
       </div>
 
-      <div class="col">
-        <h4>About</h4>
-        <a href="#">About</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Condition</a>
-        <a href="#">Contact Us</a>
-      </div>
-
-      <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign in</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wqishlist</a>
-        <a href="#">Track My Order</a>
-        <a href="#">Help</a>
-      </div>
-
-      <div class="col install">
-        <h4>Install App</h4>
-        <p>From App Store or Google Play</p>
-        <div class="row">
-          <img
-            width="130"
-            src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg"
-            alt=""
-          />
-          <img
-            width="150"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMDUEVaX4uTPsf426_zih6LVOgJmr4Nelrg&s"
-            alt=""
-          />
-        </div>
-        <p>Secured Payment Gateways</p>
-        <img
-          width="200"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-Wbe2szk-Pzbufuu5wVhqLaOHGsuDtM8Pg&s"
-          alt=""
-        />
-      </div>
-
-      <div class="copyright">
-        <p>@ 2025, marketa html & css</p>
-      </div>
+      <span class="footer__copy">
+        &#169; All Rights Reserved By Bedimcode
+      </span>
     </footer>
 
-    <script src="javascript.js"></script>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
   </body>
 </html>
